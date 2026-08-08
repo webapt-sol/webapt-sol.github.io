@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en" >
   <head>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      if (params.get("preview") !== "009") {
+        window.location.replace("maintenance.html");
+      }
+    </script>
     <meta charset="utf-8" />
     <title>Webapt Solutions | One Page Parallax Front End Theme</title>
     <link
